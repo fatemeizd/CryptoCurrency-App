@@ -4,7 +4,7 @@ CryptoCurrency-App project with API!
 
 
 
-# Weather-App Project with API and Python
+# CryptoCurrency-App Project with API and Python
 
 In this project we get crypto information of a coin with api key and show details of each coin.
 we need an account in cryptocompare site, get a api key and linke of api call, also with get() method in requests library we recieve information in json file and use this for show every data.
