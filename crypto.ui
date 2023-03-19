@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CryptoCurrency App</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="background_label">
+    <property name="geometry">
+     <rect>
+      <x>-60</x>
+      <y>0</y>
+      <width>851</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>download (1).jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 104, 28);
+font: 10pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+background-color: rgb(111, 157, 255);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Select Crypto :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(111, 157, 255);
+color: rgb(255, 104, 28);
+font: 10pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>BitCoin(BTC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ethereum(ETH)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BUSD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>XRP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tether(USDT)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Litecoin(LTC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Polkadot(DOT)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Binance Coin(BNB)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chainlink(LINK)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Polygon(MATIC)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="price_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(67, 67, 67);
+font: 10pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+background-color: rgb(255, 101, 150);</string>
+    </property>
+    <property name="text">
+     <string>Crypto Price:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="high24_label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>10</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(67, 67, 67);
+font: 9pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+background-color: rgb(245, 255, 126);</string>
+    </property>
+    <property name="text">
+     <string>HIGH24HOUR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="low24_label">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(67, 67, 67);
+font: 9pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+background-color: rgb(245, 255, 126);</string>
+    </property>
+    <property name="text">
+     <string>LOW24HOUR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>170</y>
+      <width>791</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="more_label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>143</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 100, 49);
+font: 9pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string>More Information</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>527</x>
+      <y>1</y>
+      <width>3</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="market_label">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>110</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(67, 67, 67);
+font: 10pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+background-color: rgb(255, 101, 150);</string>
+    </property>
+    <property name="text">
+     <string>MARKET</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="price_listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>261</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(166, 166, 166);
+font: 9pt &quot;Segoe Print&quot;;
+color: rgb(15, 15, 15);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="historical_listWidget">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>180</y>
+      <width>261</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(166, 166, 166);
+font: 9pt &quot;Segoe Print&quot;;
+color: rgb(15, 15, 15);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="toplists_listWidget">
+    <property name="geometry">
+     <rect>
+      <x>529</x>
+      <y>180</y>
+      <width>261</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(166, 166, 166);
+font: 9pt &quot;Segoe Print&quot;;
+color: rgb(15, 15, 15);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>146</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 100, 49);
+font: 9pt &quot;Segoe Print&quot;;
+border-radius: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string>Clear Lists</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
